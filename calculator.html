@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="mainbox">
+            <div class="box">
+                <div class="screen">
+                   <input readonly type="text" name="" id="calScreen">
+                </div>
+                <div class="btnbox">
+                    <ul>
+                        <li>
+                            <button onclick="deleteletter()">Del</button>
+                        </li>
+                        <li>
+                            <button onclick="allClear()">AC</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="getBtnVal(innerText)">7</button></li>
+                        <li><button onclick="getBtnVal(innerText)">8</button></li>
+                        <li><button onclick="getBtnVal(innerText)">9</button></li>
+                        <li><button onclick="getBtnVal(innerText)">+</button></li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="getBtnVal(innerText)">4</button></li>
+                        <li><button onclick="getBtnVal(innerText)">5</button></li>
+                        <li><button onclick="getBtnVal(innerText)">6</button></li>
+                        <li><button onclick="getBtnVal(innerText)">-</button></li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="getBtnVal(innerText)">1</button></li>
+                        <li><button onclick="getBtnVal(innerText)">2</button></li>
+                        <li><button onclick="getBtnVal(innerText)">3</button></li>
+                        <li><button onclick="getBtnVal(innerText)">*</button></li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="getBtnVal(innerText)">0</button></li>
+                        <li><button onclick="getBtnVal(innerText)">.</button></li>
+                        <li><button onclick="getBtnVal(innerText)">/</button></li>
+                        <li><button onclick="getBtnVal(innerText)">=</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function getBtnVal(btnval)
+        {
+            document.getElementById('calScreen').value += btnVal
+            //console.log(btnvalue);
+
+        }
+
+        function calTotal()
+        {
+            
+        }
+    </script>
+</body>
+</html>
